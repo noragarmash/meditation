@@ -1,0 +1,176 @@
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f1f1f1;
+    color: #333;
+}
+
+/* Header */
+.header {
+    background-image: url('images/yoga-background.jpg'); /* Add a background image */
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 100px 0;
+    color: white;
+}
+
+.header .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.avatar img {
+    width: 200px; /* Large image size */
+    height: 200px;
+    border-radius: 50%;
+    border: 5px solid white;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+.name {
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.role {
+    font-size: 18px;
+    font-style: italic;
+}
+
+/* Summary Section */
+.summary {
+    background-color: #ffffff;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.summary h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.summary p {
+    font-size: 18px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Contact Section */
+.contact {
+    padding: 50px 0;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.contact h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.social-links {
+    margin-top: 20px;
+}
+
+.social-icon {
+    font-size: 18px;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 0 10px;
+    background-color: #333;
+    color: white;
+    border-radius: 30px;
+    transition: background-color 0.3s ease;
+}
+
+.social-icon:hover {
+    background-color: #00aaff;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+/* Media Queries for Responsiveness */
+
+/* Tablet and smaller screens */
+@media (max-width: 768px) {
+    .header {
+        padding: 80px 0; /* Reduce padding on smaller screens */
+    }
+
+    .name {
+        font-size: 28px; /* Slightly smaller font size */
+    }
+
+    .role {
+        font-size: 16px; /* Adjust role font size */
+    }
+
+    .summary h2 {
+        font-size: 24px;
+    }
+
+    .summary p {
+        font-size: 16px;
+        padding: 0 20px; /* Add some padding to prevent text from touching the sides */
+    }
+
+    .social-icon {
+        font-size: 16px; /* Make social icons a little smaller */
+        padding: 8px 16px; /* Smaller padding */
+    }
+
+    .social-links {
+        margin-top: 15px;
+    }
+
+    /* Avatar Image */
+    .avatar img {
+        width: 150px; /* Smaller image on mobile */
+        height: 150px;
+    }
+}
+
+/* Mobile (Portrait) */
+@media (max-width: 480px) {
+    .header {
+        padding: 60px 0; /* Even less padding on very small screens */
+    }
+
+    .name {
+        font-size: 24px; /* Even smaller font size */
+    }
+
+    .role {
+        font-size: 14px; /* Adjust role font size */
+    }
+
+    .summary h2 {
+        font-size: 22px;
+    }
+
+    .summary p {
+        font-size: 14px;
+        padding: 0 15px; /* Even smaller padding */
+    }
+
+    .social-icon {
+        font-size: 14px;
+        padding: 6px 12px; /* Further reduced padding */
+    }
+
+    /* Avatar Image */
+    .avatar img {
+        width: 120px; /* Even smaller avatar on very small screens */
+        height: 120px;
+    }
+}
